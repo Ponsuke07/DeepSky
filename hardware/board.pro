@@ -1,4 +1,4 @@
-update=2019年06月22日 10時24分28秒
+update=2019年06月22日 13時32分20秒
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,17 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=../../kicad-symbols
-[eeschema/libraries]
-LibName1=power
-LibName2=libs/ft2232d-akizuki
-LibName3=conn
-LibName4=device
-LibName5=transistors
-LibName6=Logic_LevelTranslator
-LibName7=libs/jtag
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -46,3 +35,13 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=50
+[eeschema]
+version=1
+LibDir=../../kicad-symbols
+[eeschema/libraries]
+LibName1=power
+LibName2=conn
+LibName3=device
+LibName4=transistors
+LibName5=Logic_LevelTranslator
+LibName6=libs/ae-ft2232d
