@@ -1,4 +1,4 @@
-update=2019年06月22日 02時34分13秒
+update=2019年06月22日 10時24分28秒
 version=1
 last_client=kicad
 [pcbnew]
@@ -35,3 +35,14 @@ LibName3=conn
 LibName4=device
 LibName5=transistors
 LibName6=Logic_LevelTranslator
+LibName7=libs/jtag
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=50
