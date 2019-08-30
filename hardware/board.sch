@@ -5,6 +5,7 @@ LIBS:device
 LIBS:transistors
 LIBS:Logic_LevelTranslator
 LIBS:ae-ft2232d
+LIBS:Interface_USB
 LIBS:board-cache
 EELAYER 25 0
 EELAYER END

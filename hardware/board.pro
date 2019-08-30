@@ -1,4 +1,4 @@
-update=2019年06月22日 13時32分20秒
+update=2019年08月30日 21時44分13秒
 version=1
 last_client=kicad
 [pcbnew]
@@ -45,3 +45,4 @@ LibName3=device
 LibName4=transistors
 LibName5=Logic_LevelTranslator
 LibName6=libs/ae-ft2232d
+LibName7=Interface_USB
