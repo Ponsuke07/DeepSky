@@ -1,0 +1,312 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:conn
+LIBS:device
+LIBS:transistors
+LIBS:Logic_LevelTranslator
+LIBS:ae-ft2232d
+LIBS:board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AE-FT2232D U1
+U 1 1 5D6B9691
+P 2675 3575
+F 0 "U1" H 2675 4700 60  0000 C CNN
+F 1 "FT2232D" H 2675 4800 60  0000 C CNN
+F 2 "AE-2232:AE-FT2232" H 2675 3925 60  0001 C CNN
+F 3 "" H 2675 3925 60  0001 C CNN
+	1    2675 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5D6B9698
+P 1925 4925
+F 0 "#PWR030" H 1925 4675 50  0001 C CNN
+F 1 "GND" H 1925 4775 50  0000 C CNN
+F 2 "" H 1925 4925 50  0001 C CNN
+F 3 "" H 1925 4925 50  0001 C CNN
+	1    1925 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 5D6B969E
+P 3500 4900
+F 0 "#PWR031" H 3500 4650 50  0001 C CNN
+F 1 "GND" H 3500 4750 50  0000 C CNN
+F 2 "" H 3500 4900 50  0001 C CNN
+F 3 "" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	1    0    0    -1  
+$EndComp
+Text Label 3375 2625 0    50   ~ 0
+TCK
+Text Label 3375 2725 0    50   ~ 0
+TDI
+Text Label 3375 2825 0    50   ~ 0
+TDO
+Text Label 3375 2925 0    50   ~ 0
+TMS
+Text Label 3375 3025 0    50   ~ 0
+nOE
+Text Label 3375 3125 0    50   ~ 0
+nTARGET_VCC
+Text Label 3375 3225 0    50   ~ 0
+nSRST_IN
+Text Label 3375 3325 0    50   ~ 0
+RTCK
+Text Label 3375 3425 0    50   ~ 0
+nTRST
+Text Label 3375 3525 0    50   ~ 0
+nSRST
+Text Label 3375 3625 0    50   ~ 0
+nOE_TRST
+Text Label 3375 3725 0    50   ~ 0
+nOE_SRST
+$Comp
+L R R2
+U 1 1 5D6B96B0
+P 1950 2475
+F 0 "R2" V 2030 2475 50  0000 C CNN
+F 1 "10K" V 1950 2475 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1880 2475 50  0001 C CNN
+F 3 "" H 1950 2475 50  0001 C CNN
+	1    1950 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR032
+U 1 1 5D6B96B7
+P 1950 2250
+F 0 "#PWR032" H 1950 2100 50  0001 C CNN
+F 1 "VCC" H 1950 2400 50  0000 C CNN
+F 2 "" H 1950 2250 50  0001 C CNN
+F 3 "" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5D6B96BD
+P 3625 3825
+F 0 "R6" V 3705 3825 50  0000 C CNN
+F 1 "10K" V 3625 3825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3555 3825 50  0001 C CNN
+F 3 "" H 3625 3825 50  0001 C CNN
+	1    3625 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR033
+U 1 1 5D6B96C4
+P 1800 4075
+F 0 "#PWR033" H 1800 3925 50  0001 C CNN
+F 1 "VCC" H 1800 4225 50  0000 C CNN
+F 2 "" H 1800 4075 50  0001 C CNN
+F 3 "" H 1800 4075 50  0001 C CNN
+	1    1800 4075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR034
+U 1 1 5D6B96CA
+P 3900 3825
+F 0 "#PWR034" H 3900 3675 50  0001 C CNN
+F 1 "VCC" H 3900 3975 50  0000 C CNN
+F 2 "" H 3900 3825 50  0001 C CNN
+F 3 "" H 3900 3825 50  0001 C CNN
+	1    3900 3825
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3275 3925
+NoConn ~ 3275 4025
+NoConn ~ 3275 4525
+NoConn ~ 2075 4525
+NoConn ~ 2075 4425
+NoConn ~ 2075 4225
+NoConn ~ 2075 4125
+NoConn ~ 2075 3825
+NoConn ~ 2075 3725
+NoConn ~ 2075 3625
+NoConn ~ 2075 3525
+NoConn ~ 2075 3425
+NoConn ~ 2075 3325
+NoConn ~ 2075 2725
+NoConn ~ 2075 2825
+NoConn ~ 2075 2925
+NoConn ~ 2075 3025
+NoConn ~ 2075 3125
+NoConn ~ 2075 3225
+Wire Wire Line
+	1925 3925 1925 4925
+Wire Wire Line
+	3500 4125 3500 4900
+Wire Wire Line
+	3275 4225 3500 4225
+Connection ~ 3500 4225
+Wire Wire Line
+	3275 4325 3500 4325
+Connection ~ 3500 4325
+Wire Wire Line
+	3275 4425 3500 4425
+Connection ~ 3500 4425
+Wire Wire Line
+	3275 3125 3375 3125
+Wire Wire Line
+	3275 3025 3375 3025
+Wire Wire Line
+	3275 2825 3375 2825
+Wire Wire Line
+	3275 2725 3375 2725
+Wire Wire Line
+	3275 2625 3375 2625
+Wire Wire Line
+	3275 3225 3375 3225
+Wire Wire Line
+	3275 3325 3375 3325
+Wire Wire Line
+	3275 3425 3375 3425
+Wire Wire Line
+	3275 3525 3375 3525
+Wire Wire Line
+	3275 3625 3375 3625
+Wire Wire Line
+	3275 3725 3375 3725
+Wire Wire Line
+	2075 3925 1925 3925
+Wire Wire Line
+	2075 4025 1925 4025
+Connection ~ 1925 4025
+Wire Wire Line
+	3275 2925 3375 2925
+Wire Wire Line
+	1950 2625 2075 2625
+Wire Wire Line
+	1950 2325 1950 2250
+Wire Wire Line
+	3275 3825 3475 3825
+Wire Wire Line
+	3775 3825 3900 3825
+Wire Wire Line
+	1800 4325 2075 4325
+Wire Wire Line
+	1800 4075 1800 4325
+Wire Wire Line
+	3275 4125 3500 4125
+Text HLabel 10425 2675 2    50   Input ~ 0
+TCK
+Text HLabel 10425 2775 2    50   Input ~ 0
+TDI
+Text HLabel 10425 2875 2    50   Input ~ 0
+TDO
+Text HLabel 10425 2975 2    50   Input ~ 0
+TMS
+Text HLabel 10425 3075 2    50   Input ~ 0
+nOE
+Text HLabel 10425 3175 2    50   Input ~ 0
+nTARGET_VCC
+Text HLabel 10425 3275 2    50   Input ~ 0
+nSRST_IN
+Text HLabel 10425 3375 2    50   Input ~ 0
+RTCK
+Text HLabel 10425 3475 2    50   Input ~ 0
+nTRST
+Text HLabel 10425 3575 2    50   Input ~ 0
+nSRST
+Text HLabel 10425 3675 2    50   Input ~ 0
+nOE_TRST
+Text HLabel 10425 3775 2    50   Input ~ 0
+nOE_SRST
+Text Label 10325 2675 2    50   ~ 0
+TCK
+Text Label 10325 2775 2    50   ~ 0
+TDI
+Text Label 10325 2875 2    50   ~ 0
+TDO
+Text Label 10325 2975 2    50   ~ 0
+TMS
+Text Label 10325 3075 2    50   ~ 0
+nOE
+Text Label 10325 3175 2    50   ~ 0
+nTARGET_VCC
+Text Label 10325 3275 2    50   ~ 0
+nSRST_IN
+Text Label 10325 3375 2    50   ~ 0
+RTCK
+Text Label 10325 3475 2    50   ~ 0
+nTRST
+Text Label 10325 3575 2    50   ~ 0
+nSRST
+Text Label 10325 3675 2    50   ~ 0
+nOE_TRST
+Text Label 10325 3775 2    50   ~ 0
+nOE_SRST
+Wire Wire Line
+	10425 3175 10325 3175
+Wire Wire Line
+	10425 3075 10325 3075
+Wire Wire Line
+	10425 2875 10325 2875
+Wire Wire Line
+	10425 2775 10325 2775
+Wire Wire Line
+	10425 2675 10325 2675
+Wire Wire Line
+	10425 3275 10325 3275
+Wire Wire Line
+	10425 3375 10325 3375
+Wire Wire Line
+	10425 3475 10325 3475
+Wire Wire Line
+	10425 3575 10325 3575
+Wire Wire Line
+	10425 3675 10325 3675
+Wire Wire Line
+	10425 3775 10325 3775
+Wire Wire Line
+	10425 2975 10325 2975
+Text HLabel 10425 3875 2    50   Input ~ 0
+GND
+Text HLabel 10425 2575 2    50   Input ~ 0
+VCC
+$Comp
+L VCC #PWR035
+U 1 1 5D6BE8BB
+P 10325 2575
+F 0 "#PWR035" H 10325 2425 50  0001 C CNN
+F 1 "VCC" H 10325 2725 50  0000 C CNN
+F 2 "" H 10325 2575 50  0001 C CNN
+F 3 "" H 10325 2575 50  0001 C CNN
+	1    10325 2575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10325 2575 10425 2575
+$Comp
+L GND #PWR036
+U 1 1 5D6BED11
+P 10325 3875
+F 0 "#PWR036" H 10325 3625 50  0001 C CNN
+F 1 "GND" H 10325 3725 50  0000 C CNN
+F 2 "" H 10325 3875 50  0001 C CNN
+F 3 "" H 10325 3875 50  0001 C CNN
+	1    10325 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10325 3875 10425 3875
+$EndSCHEMATC
